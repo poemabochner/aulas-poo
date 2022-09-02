@@ -6,8 +6,29 @@ public class Pessoa {
 	private Double peso;
 	private Double altura;
 
+	//construtor padrão (default) - vazio
+	//um construtor não tem retorno,
+	//mas pode ter argumentos
+	//um construtor não é um método
+	public Pessoa() {
+		// TODO Auto-generated constructor stub
+		System.out.println("Novo objeto criado!");
+	}
+	
 	// a partir de agora sempre será private
 	// Loombok
+	
+	//construtor cheio
+	public Pessoa(Integer codigo, String nome, Double peso, Double altura) {
+		super();
+		this.codigo=codigo;
+		this.nome=nome;
+		this.peso=peso;
+		this.altura=altura;
+	}
+	
+	
+	
 	public Integer getCodigo() {
 		return codigo;
 	}
@@ -43,11 +64,14 @@ public class Pessoa {
 		Double imc = peso/(altura*altura);
 		return imc;
 	}
-	private String resultadoIMC() {
+	public String resultadoIMC() {
 		//encapsulado
 		if (calcularIMC()<18.5) {
 			return "Abaixo do Peso";
-		} 
-		//só fazer as outras condições do IMC
+		} else if (calcularIMC()<24.9) {
+			return "Peso Ideal";
+		}else {
+			return "Acima do Peso";
+		}
 	}
 }
