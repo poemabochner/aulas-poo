@@ -1,5 +1,7 @@
 package br.org.serratec.model;
 
+//herança entre as classes
+
 public class Gerente extends Funcionario {
 	private String tipo;
 

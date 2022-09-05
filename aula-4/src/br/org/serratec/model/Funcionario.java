@@ -4,6 +4,7 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private Double salario;
+	
 	public Funcionario(String nome, String cpf, Double salario) {
 		super();
 		this.nome = nome;

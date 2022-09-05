@@ -7,9 +7,12 @@ public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		Gerente gerente = new Gerente("Roberto", "0123", 8000., "Financeiro");
-		System.out.println("Dados: "+ gerente.getNome()+"\n"+gerente.getSalario());
 		Assistente assistente = new Assistente("Poema", "1234", 20000., "Assistente TI");
+		gerente.aumentarSalario();
+		assistente.aumentarSalario();
+		System.out.println("Dados: "+ gerente.getNome()+"\n"+gerente.getSalario());
 		System.out.println("Dados: "+ assistente.getNome()+"\n"+assistente.getSalario());
+		
 	}
 
 }
