@@ -15,6 +15,15 @@ public class Medico {
 		this.valorConsulta = valorConsulta;
 		contador++;
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Nome: " + nome + " Salário: " + salario;
+	}
+
+
 
 	public Integer getCrm() {
 		return crm;
@@ -34,6 +43,14 @@ public class Medico {
 	public static int getContador() {
 		return contador;
 	}
+	
+	
+	public static void setContador(int contador) {
+		Medico.contador = contador;
+	}
+
+
+
 	public void pagamentoDinheiro() {
 		salario += valorConsulta;
 	}
