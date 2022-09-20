@@ -1,0 +1,26 @@
+Pessoa
+-nome
+-cpf
+-dataNascimento
+
+
+Funcionario (extends Pessoa)
+-salarioBruto
+-descontoInss
+-descontoIR
+
+
+Dependente (extends Pessoa)
+-parentesco(filho, sobrinho, outros)
+
+ReciboPagamento
+-calcularInss
+-calcularIr
+
+DependenteException
+
+FuncionarioException
+
+Importador
+-importarArquivo
+-gravarArquivo
